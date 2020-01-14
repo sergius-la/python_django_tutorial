@@ -102,3 +102,15 @@ python manage.py createsuperuser
 
 ### **Part 5 - Database and Migrations**
 
+#### Models
+
+```python
+from django.db import models
+from django.utils import timezone
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    # auto_now=True, auto_now_add=True
+    date_posted = models.DateTimeField(default=timezone.now)
+```

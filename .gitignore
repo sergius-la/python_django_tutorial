@@ -8,6 +8,10 @@ __pycache__/
 
 # VS Vode
 .vscode
+# Idea
+.idea/
+# Mac
+.DS_Store
 
 # Distribution / packaging
 .Python
