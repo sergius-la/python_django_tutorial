@@ -4,7 +4,7 @@
 
 3/17
 
-- __Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started__
+### **Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started**
   - Install django
   - Admin commands `django-admin`
   - Start django project `django-admin startproject django_project`
@@ -30,7 +30,7 @@
     ```
   - Run Application - `./manage.py runserver`
   - Admin Panel - `http://localhost:8000/admin`
-- __Python Django Tutorial: Full-Featured Web App Part 2 - Applications and Routes__
+### **Python Django Tutorial: Full-Featured Web App Part 2 - Applications and Routes**
   - Create django app - `python manage.py startapp blog`
   - Adding app urls path to `project` urls
     ```python
@@ -57,7 +57,8 @@
         path('about/', views.about, name="blog-about"),
     ]
     ```
-- __Python Django Tutorial: Full-Featured Web App Part 3 - Templates__
+### **Python Django Tutorial: Full-Featured Web App Part 3 - Templates**
+
   - Add Installed apps into project `settings.py`
   ```python
   # <appname>.<apps.py>.<ClassName>
@@ -84,3 +85,20 @@
     path('about/', views.about, name="blog-about"),
   ]
   ``` 
+  
+### **Part 4 - Admin Page**
+
+```shell script
+python manage.py makemigrations
+```
+
+```shell script
+python manage.py migrate
+```
+
+```shell script
+python manage.py createsuperuser
+```
+
+### **Part 5 - Database and Migrations**
+
