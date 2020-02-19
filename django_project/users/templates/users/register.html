@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class='form-group'>
+                <legend class="border-button mb-4">
+                    Join Today
+                </legend>
+                {{ form }}
+            </fieldset>
+        </form>
+    </h1>
+{% endblock content %}
