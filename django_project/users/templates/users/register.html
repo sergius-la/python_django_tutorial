@@ -4,11 +4,17 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class='form-group'>
-                <legend class="border-button mb-4">
-                    Join Today
-                </legend>
-                {{ form }}
+                <legend class="border-button mb-4">Join Today</legend>
+                {{ form.as_p }}
             </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit">Sing Up</button>
+                </div>
         </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have an Account? <a class="ml-2" href="#">Sing In</a>
+            </small>
+        </div>
     </h1>
 {% endblock content %}
